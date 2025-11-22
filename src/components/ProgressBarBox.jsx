@@ -21,15 +21,16 @@ export default function ProgressBarBox() {
 
   return (
     <div style={{
-      width: "400px",
+      width: "215px",
       padding: "20px",
       border: "2px solid #ccc",
       borderRadius: "15px",
       boxShadow: "0 5px 15px rgba(0,0,0,0.1)",
       backgroundColor: "#f9f9f9",
-      fontFamily: "Arial, sans-serif"
+      fontFamily: "Arial, sans-serif",
+      zIndex: 100,
     }}>
-      <h2>Custom Progress Bar</h2>
+      <h2>Reps</h2>
 
       <div style={{ marginBottom: "10px" }}>
         <label>

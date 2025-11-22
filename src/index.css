@@ -18,12 +18,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .navbar .logo {
-  font-size: 1.4rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
@@ -32,6 +32,7 @@ body {
   margin-left: 1rem;
   text-decoration: none;
   font-weight: 500;
+  font-size: 1.5rem;
 }
 
 .nav-links a:hover {

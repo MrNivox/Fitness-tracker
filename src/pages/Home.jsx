@@ -1,17 +1,16 @@
 import { useNavigate } from 'react-router-dom'
 
 export default function Home() {
-  const navigate = useNavigate()
+  const navigate = useNavigate("/about")
 
   return (
     <div className="home">
       <section className="hero">
-        <h2>Welcome to <span className="highlight">WIEEE Code</span></h2>
+        <h2>Welcome to <span className="highlight">TrackMyReps</span></h2>
         <p>
-          Kickstart your project using this React template.
-          Customize it with your own idea, theme, and creativity!
+          <h1>Are you ready to transform your fitness journey?</h1>
         </p>
-        <button onClick={() => navigate('/about')}>Go to Project Page</button>
+        <button onClick={() => navigate("")}>I am ready!</button>
       </section>
     </div>
   )

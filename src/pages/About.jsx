@@ -14,13 +14,13 @@ export default function About() {
         </div>
 
         <div className="card">
-          <h3>Feature 2</h3>
-          <p>Describe how your solution makes an impact.</p>
+          
+          <input type="text" placeholder="insert Name"></input>
+          <p><ProgressBarBox>  </ProgressBarBox></p>
         </div>
 
         <div className="card">
-          <h3>Feature 3</h3>
-          <p>Include any future improvements or ideas.</p>
+          <ProgressBarBox>  </ProgressBarBox>
         </div>
       </div>
     </div>

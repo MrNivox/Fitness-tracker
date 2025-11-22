@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ProgressBarBox from "../components/ProgressBarBox.jsx";
+import ProgressBarBox from "./ProgressBarBox";
 
 function WorkoutPage() {
   const [cards, setCards] = useState([]);
@@ -35,7 +35,7 @@ function WorkoutPage() {
               borderRadius: "10px" 
             }}
           >
-            <input type="text" placeholder="Insert Name"></input>
+            <h3>Exercise</h3>
             <ProgressBarBox />
           </div>
         ))}
