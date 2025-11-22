@@ -13,8 +13,8 @@ body {
 
 /* Navbar */
 .navbar {
-  background: var(--primary-color);
-  color: white;
+  background: rgb(147, 190, 167);/*var(--primary-color);*/
+  color: rgb(240, 248, 236);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,7 +28,7 @@ body {
 }
 
 .nav-links a {
-  color: white;
+  color: rgb(255, 255, 255);
   margin-left: 1rem;
   text-decoration: none;
   font-weight: 500;
