@@ -1,28 +1,20 @@
-import ProgressBarBox from "../components/ProgressBarBox.jsx";
-export default function About() {
+import { useNavigate } from 'react-router-dom'
+
+export default function Home() {
+
+  const navigate = useNavigate("/about")
   return (
-    <div className="about">
-      <h2>Workout</h2>
-      <p>
-        Use this page to describe your project! You can rename it,
-        add sections for team members, features, or demos.
-      </p>
-      <div className="card-grid">
+    <div className="home">
+      <section className="hero">
+        
+        <h2>Welcome to <span className="highlight">TrackMyReps</span></h2>
+        <p>
+          <h1>Are you ready to transform your fitness journey?</h1>
+        </p>
+        <button onClick={() => navigate("")}>I am ready!</button>
 
-        <div className="card">
-          <ProgressBarBox>  </ProgressBarBox>
-        </div>
+      </section>
 
-        <div className="card">
-          
-          <input type="text" placeholder="insert Name"></input>
-          <p><ProgressBarBox>  </ProgressBarBox></p>
-        </div>
-
-        <div className="card">
-          <ProgressBarBox>  </ProgressBarBox>
-        </div>
-      </div>
     </div>
-  )
-}
+
+  )}
