@@ -1,19 +1,27 @@
-import { Routes, Route } from 'react-router-dom'
-import About from './pages/About'
-import Navbar from './components/Navbar'
-import Workout from './pages/Workout'
-// import testing from './pages/testing'
+import { Routes, Route, Navigate } from "react-router-dom";
+import { useState } from "react";
+import About from "./pages/About";
+import Navbar from "./components/Navbar";
+import Workout from "./pages/Workout";
+import SignIn from "./pages/SignIn";
 
 function App() {
+  const [user, setUser] = useState(() => localStorage.getItem("currentUser"));
+
   return (
     <div className="app">
-      <Navbar />
+      {user && <Navbar />}
+
       <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/workout" element={<Workout />} />
+        <Route
+          path="/signin"
+          element={<SignIn onLogin={(username) => setUser(username)} />}
+        />
+        <Route path="/" element={user ? <About /> : <Navigate to="/signin" />} />
+        <Route path="/workout" element={user ? <Workout /> : <Navigate to="/signin" />} />
       </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

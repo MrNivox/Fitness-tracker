@@ -11,7 +11,7 @@ export default function Home() {
         <p>
           <h1>Are you ready to transform your fitness journey?</h1>
         </p>
-        <button onClick={() => navigate("")}>I am ready!</button>
+        <button onClick={() => navigate("/signin")}>I am ready!</button>
 
       </section>
 
