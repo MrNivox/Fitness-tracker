@@ -1,16 +1,17 @@
-# WIEEE Code Template
+# Fitness Tracker
 
-Welcome to the **WIEEE Code Starter Template**!  
-This React template gives you a clean, ready-to-use starting point for your hackathon project.
+Welcome to the **Fitness Tracker**!  
+This React project is created for WIEEE 2025 hackathon using the template they provided.
 
 It includes:  
-- A **Home page** with a hero section and a button to navigate  
-- A **Second page** for describing your project or features  
+- A **Login page** where you can register and sign in
+- A **Home page** that features our project
+- A **Tracker component** that allows you to add, customize, and set new fitness goals.
 - Easy-to-customize layout and components  
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Clone this repository** (or use the template button on GitHub):
 
